@@ -93,24 +93,6 @@ class WordRepositoryImpl: WordRepository {
         }
     }
 
-    /*
-
-    private fun randomWord(letters: String?): List<Word> {
-    val randomWord = mutableListOf<Word>()
-    if (!letters.isNullOrEmpty()) {
-        val lettersAsInt = letters.toIntOrNull()
-        if (lettersAsInt != null) {
-            val matchingWords = words.filter { it.letters == lettersAsInt }
-            if (matchingWords.isNotEmpty()) {
-                val temporaryRandomWord = matchingWords.random()
-                randomWord.add(temporaryRandomWord)
-            }
-        }
-    }
-    return randomWord
-}
-     */
-
 
     private fun findWord(query: String?): List<Word> {
 
